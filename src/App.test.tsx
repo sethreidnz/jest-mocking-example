@@ -13,6 +13,7 @@ jest.mock("./api/users", () => {
 });
 
 describe("<App />", () => {
+  // TODO: figure how to use new jest.mocked https://github.com/facebook/jest/pull/12089
   const mockGetAllUsers = getAll as jest.MockedFunction<typeof getAll>;
   beforeEach(() => {
     mockGetAllUsers.mockReset();

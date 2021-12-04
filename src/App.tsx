@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAll, User } from "./api/users";
+
 type UserState = {
   value: User[];
   status: Status;
